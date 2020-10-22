@@ -1,0 +1,80 @@
+
+/*Colocando estilo e centralizando o titulo
+na página index*/
+
+.titulo{
+    text-align: center;
+}
+/*Deixando tudo alinhando usando um tipo de estilo flexbox e assim
+já deixo meu site responsivo*/
+
+.container{
+       display: flex;
+       flex-flow: row wrap;/* whap= esse metodo serve 
+       para deixar o texto abaixo da imagem*/
+       /* row= esse metodo serve para deixar o texto do lado 
+       da imagem*/
+       justify-content: center;
+       /*align-items: center;: serve para alinhar o texto
+       ao lado da imagem por exemplo, deixa o texto a esquerda e a
+       imagem a direita depende de onde está alinhando sua imagem.*/ 
+}
+
+.container-1{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    
+}
+/*Deixando o menu alinhando*/
+#menu li{
+       display: inline;
+       padding: 15px;
+
+}
+/*Tirando o link do menu*/
+#menu li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+/*Colocando efeito no menu, quando o usuário passar o mouse em cima*/
+#menu li a:hover{
+  color: #0000ff;
+}
+/*Mudando padrão da imagem
+
+exemplos que não ultilizei:
+.paragrafo{
+    padding: 30px -- para separar o texto da imagem e dos cantos da tela
+}
+.border-radius{
+    border-radius 50px; -- serve para deixar a imagem redonda 
+    isso também depende do formato da foto, se for uma imagem
+    retangular, a depois de aplicar esse metodo a imagem ficará oval.
+}
+.altura-largura{
+    width: 300px -- isso depende altura da foto.
+    height: 300px -- isso depende da largura da foto,
+    mas dá para alterar dependendo da necessidade do dev.
+
+    obs: essas alterações só teram efeito se você for em imagens e dentro
+    de "IMG", você colocar "class" e dá um referencia, como essas,
+    usadas como exemplo.
+
+    px -- siginifica pixels.
+}
+*/
+/*Modificando o tamanho dos icones*/
+.tamanho{
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+}
+
+/*Colocando estilo e centralizando o titulo
+na página conato*/
+
+.espaco-50{
+   margin-left: 50px;
+}
