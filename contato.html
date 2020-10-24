@@ -25,18 +25,22 @@
               <h2>Mande uma mensagem:</h2>
               <form>
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome"> 
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
                 <br><br>
                 <label for="email">Email:</label><br>
-                <input type="text" id="email">
+                <input type="text" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
                 <br><br>
                 <label for="telefone">Telefone:</label><br>
-                <input type="text" id="telefone">
+                <input type="text" id="telefone" onkeyup="validaTelefone()">
+                <div id="txtTelefone"></div>
                 <br><br>
                 <label for="assunto">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+                <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
                 <br><br>
-                <button>Enviar</button><button>Voltar</button>
+                <button onclick="enviar()">Enviar</button><button>Voltar</button>
               </form>
             </div>
             <div class="container-1">
@@ -53,7 +57,7 @@
                 style="border: 4;" 
                 allowfullscreen="" 
                 aria-hidden="false" 
-                tabindex="0"></iframe>
+                tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
               </div>
           </div>
         </div>
@@ -76,5 +80,7 @@
                 Todos os direitos reservados: Wakanda Forever &copy;
              </p>
          </footer>
+
+         <script src="assets/js/script.js"></script>
 </body>
 </html>
